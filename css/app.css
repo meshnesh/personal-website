@@ -88,6 +88,9 @@ span{
    -o-transition: width 4.50s ease !important;
       transition: width 4.50s ease !important;
  }
+.large-collapse{
+    padding-top: 2%;
+}
 
 .row{
     max-width: none;

@@ -1,3 +1,120 @@
+.row {
+  max-width: 100%; }
+
+.menu {
+/*  background-color: #292c2f;*/
+  padding: 1.5rem 3rem;
+  height: auto; }
+  .menu .inline-list {
+    text-align: center; }
+    .menu .inline-list li {
+      float: none;
+      display: inline-block; }
+    .menu .inline-list a {
+      color: #fff;
+      padding-bottom: 0.5rem; }
+      .menu .inline-list a:hover {
+        color: dodgerblue;
+        transition: all .3s ease-in-out; }
+    .menu .inline-list .active a {
+      color: dodgerblue; }
+  @media only screen and (min-width: 40.063em) {
+    .menu {
+      height: 5rem; }
+      .menu .inline-list {
+        float: right; }
+      .menu a:hover {
+        border-bottom: 2px solid dodgerblue; } }
+
+.name {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1;
+  margin: 0 0 1rem 0;
+  color: #fff; }
+  .name i {
+    color: dodgerblue;
+    margin-right: 0.5rem; }
+  @media only screen and (min-width: 40.063em) {
+    .name {
+      float: left; } }
+
+
+
+
+
+.hero {
+  background: url("http://wallpoper.com/images/00/34/39/15/circuit-pcb_00343915.jpg") no-repeat center center;
+  background-size: cover;
+  height: 100vh; }
+  .hero:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom right, #002f4b, #dc4225);
+    opacity: .8; }
+  .hero .intro {
+    padding: 3rem;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); }
+  .hero h1 {
+    color: #fff;
+    font-size: 1.5rem;
+    line-height: 1.5em;
+    letter-spacing: -0.025em;
+    font-weight: 300;
+    text-align: center; }
+  .hero p {
+    color: #fff;
+    line-height: 1.75em;
+    font-weight: 200;
+    text-align: center;
+    margin-bottom: 2rem; }
+  .hero .tech-img {
+    background: url(../img/IMG-20151016-WA032.jpg) no-repeat center center;
+    background-size: cover;
+    height: 9rem;
+    width: 9rem;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto; }
+  @media only screen and (min-width: 40.063em) {
+    .hero .tech-img {
+      height: 18rem;
+      width: 18rem; }
+    .hero h1 {
+      padding-top: 4.5rem;
+      text-align: right;
+      font-size: 2.5rem; }
+    .hero p {
+      text-align: right; } }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 body{
     font-family: Oswald-Light;
 }
@@ -106,28 +223,187 @@ span{
 }
 
 
+/*footer*/
+
+
 .footer {
   background-color: #292c2f;
   text-align: center;
   font-size: 1.2rem;
   padding: 4rem; }
-  .footer p.slogan {
-    color: #8d9093;
-    font-size: 1.8rem;
-    margin: 0 0 1rem; }
-  .footer p.copywrite {
+  .footer .inline-list a {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    background-color: #33383b;
+    border-radius: 2px;
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: center;
+    line-height: 35px;
+    margin: 0 3px 0 0; }
+  .footer .contact {
+    list-style-type: none;
+    margin: 0;
+    text-align: left;
+    color: #fff; }
+    .footer .contact li {
+      margin-bottom: 2rem; }
+      .footer .contact li p {
+        padding-left: 5rem; }
+    .footer .contact i {
+      position: absolute;
+      background-color: #33383b;
+      color: #fff;
+      font-size: 2rem;
+      border-radius: 50%;
+      line-height: 1;
+      margin: 0 0 0 -4rem;
+      vertical-align: middle;
+      padding: .25em .45em; }
+  .footer .copywrite {
     color: #8f9296;
     font-size: 0.875rem;
-    margin: 0; }
-  .footer .links a {
+    margin: 0 0 1rem 0; }
+  .footer .about {
+    color: #92999f;
+    font-size: 0.875rem;
+    margin: 0 0 1rem 0; }
+  .footer .footer-links a {
     list-style: none;
-    font-weight: bold;
-    color: #ffffff;
+    font-weight: normal;
+    color: #fff;
     padding: 3rem 0 2rem;
-    margin: 0; }
-    .footer .links a::after {
+    margin: 0;
+    font-size: 0.875rem; }
+    .footer .footer-links a::after {
       content: "•";
-      padding: 0 0.4rem 0 0.8rem; }
-    .footer .links a:last-child::after {
+      padding: 0 0.2rem 0 0.4rem; }
+    .footer .footer-links a:last-child::after {
       content: "";
       padding: 0 0.4rem 0 0.8rem; }
+  @media only screen and (min-width: 40.063em) {
+    .footer p {
+      text-align: left; }
+    .footer .social {
+      text-align: left;
+      margin: 0; }
+    .footer .contact {
+      text-align: left; }
+      .footer .contact > i {
+        margin-right: 1rem; } }
+
+
+
+
+
+/*form*/
+
+.row.wide {
+  max-width: rem-calc(1200); }
+
+.contact-footer {
+  background-color: #372846;
+  padding: 3.5rem 0; }
+  .contact-footer .round-inputs input {
+    border-radius: 1000px;
+    background-color: #4B3D58;
+    height: 3.3125rem;
+    text-align: center; }
+  .contact-footer .round-inputs textarea {
+    border-radius: 30px;
+    background-color: #4B3D58;
+    height: 8rem;
+    text-align: center; }
+  .contact-footer h4 {
+    color: #e5e5e5;
+    font-weight: 100;
+    margin-bottom: 0.25rem; }
+  .contact-footer h4.phone {
+    margin-bottom: 3rem; }
+    .contact-footer h4.phone:before {
+      font-family: "foundation-icons";
+      content: "\f1f8";
+      font-weight: 300;
+      padding-top: 0.2rem;
+      font-size: 2rem;
+      color: #a9a9a9;
+      padding-left: 0.5rem;
+      padding-right: 1.65rem;
+      -webkit-text-fill-color: transparent;
+      /* Will override color (regardless of order) */
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: #a9a9a9; }
+    @media only screen and (max-width: 40em) {
+      .contact-footer h4.phone {
+        font-size: 0.875rem; } }
+  .contact-footer h4.email:before {
+    font-family: "foundation-icons";
+    content: "\f16d";
+    font-weight: 300;
+    padding-top: 0.5rem;
+    font-size: 2rem;
+    color: #a9a9a9;
+    padding-left: 0.5rem;
+    padding-right: 1.55rem;
+    -webkit-text-fill-color: transparent;
+    /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #a9a9a9; }
+  .contact-footer h4.location:before {
+    font-family: "foundation-icons";
+    content: "\f172";
+    font-weight: 300;
+    padding-top: 0.2rem;
+    font-size: 2rem;
+    color: #a9a9a9;
+    padding-left: 0.5rem;
+    padding-right: 1.85rem;
+    -webkit-text-fill-color: transparent;
+    /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #a9a9a9; }
+  .contact-footer p {
+    color: #a9a9a9;
+    font-weight: 100;
+    font-size: 0.875rem;
+    margin-bottom: 3rem;
+    margin-left: 3.5rem; }
+  .contact-footer p.form-lead {
+    font-weight: 200;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    margin-left: 0; }
+  .contact-footer p.form-lead-in {
+    color: #E87E04;
+    font-weight: 300;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    margin-left: 0; }
+  .contact-footer .social i {
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: #E87E04;
+    margin: 0;
+    padding: 4px 8px 4px 8px;
+    border: 2px solid #E87E04;
+    border-radius: 50%; }
+  @media only screen and (max-width: 40em) {
+    .contact-footer .social i {
+      font-size: 2rem;
+      margin-right: 0.5rem; } }
+  .contact-footer .inline-list {
+    margin: 0 0 0.5rem -0.3rem; }
+    .contact-footer .inline-list > li {
+      margin-left: 0.5rem; }
+  @media only screen and (max-width: 40em) {
+    .contact-footer .inline-list > li {
+      margin-bottom: 0.875rem; } }
+  .contact-footer .button {
+    background: transparent;
+    border: 2px solid #E87E04;
+    color: #a9a9a9; }
+    .contact-footer .button:hover {
+      background: #E87E04;
+      border: 2px solid #a9a9a9;
+      color: #fff; }

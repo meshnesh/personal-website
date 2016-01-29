@@ -84,3 +84,16 @@ span{
    -o-transition: width 4.50s ease !important;
       transition: width 4.50s ease !important;
  }
+
+.row{
+    max-width: none;
+}
+
+.large-collapse .activities{
+    border-left: 1px solid;
+    padding-left: 5%;
+}
+
+.large-collapse .about{
+    padding-left: 5%;
+}

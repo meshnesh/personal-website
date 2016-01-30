@@ -158,8 +158,20 @@ span{
 
 
 /* skill section*/
+.columns h3{
+    text-align: center;
+}
+
+.accordion-title{
+    text-align: center;
+}
 
 
+/*
+.accordion-content ol{
+    text-align: center;
+}
+*/
 
 
 .large-collapse{
@@ -376,6 +388,7 @@ span{
       color: #fff; }
 
 
+/*contact sectiom*/
 
 .columns h4{
     text-align: center;

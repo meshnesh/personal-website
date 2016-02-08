@@ -30,12 +30,7 @@ a {
 Modules - reusable parts of our design
 
 -------------------------------- */
-.cd-container {
-  /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
-  width: 90%;
-  max-width: 768px;
-  margin: 0 auto;
-}
+
 .cd-container::after {
   /* clearfix */
   content: '';
@@ -242,6 +237,7 @@ Main components
 .cd-content h2 {
   font-size: 20px;
   font-size: 1.25rem;
+    text-align: center;
 }
 .cd-content p {
   margin: 1em 0;

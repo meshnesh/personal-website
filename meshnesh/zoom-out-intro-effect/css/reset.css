@@ -23,6 +23,10 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+h3{
+font-size: 2em;
+    color: #fff;
+}
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section, main {
@@ -46,3 +50,26 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+
+.bounceInLeft{
+    color: #fff;
+    font-size: 5em;
+    text-align: center;
+}
+
+.bounceInRight{
+    color: #fff;
+    font-size: 3em;
+    text-align: center;
+}
+
+
+.cd-header{
+    background: #313131;
+}
+
+.small-3 h3{
+    color: #000;
+}
+

@@ -219,8 +219,9 @@ Main components
   background-color: #f0f1e7;
   z-index: 2;
 }
-.cd-content::before {
+/*.cd-content::before {*/
   /* subtle gradient right above the main content */
+/*
   content: '';
   position: absolute;
   bottom: 100%;
@@ -230,6 +231,7 @@ Main components
   background: -webkit-linear-gradient( bottom , rgba(46, 49, 61, 0.5), rgba(46, 49, 61, 0));
   background: linear-gradient(to top, rgba(46, 49, 61, 0.5), rgba(46, 49, 61, 0));
 }
+*/
 .no-cssgradients .cd-content::before {
   /* use Modernizr to detect whether the browser supports or not css gradients */
   display: none;
@@ -252,7 +254,7 @@ Main components
   }
 }
 @media only screen and (min-width: 1170px) {
-  .cd-content {
+  .cd-content{
     padding: 4em 0;
     margin-top: 570px;
   }
@@ -261,6 +263,8 @@ Main components
     font-size: 1.25rem;
   }
 }
+
+.cd-content .footer
 
 
 
